@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lazy Image Vanilla Implementation Execpections throws an error when given an emptry string 1`] = `"Must be called with src"`;
+
+exports[`Lazy Image Vanilla Implementation Execpections throws an error when it is not called with a src string 1`] = `"Must be called with src"`;
+
+exports[`Lazy Image Vanilla Implementation Execpections throws an error when not called with an image element 1`] = `"Must be called with HTMLImageElement"`;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lazy Images</title>
+</head>
+<body>
+  <h1>Vanilla Example</h1>
+  <script>
+    for (let i = 0; i < 20; i += 1) {
+      document.write(
+        `<div style="margin-top: 1200px;">
+
+        <img data-src="https://placebear.com/200/200" alt="" width="200" height="200">
+      </div>`
+      );
+    }
+  </script>
+  <script type="module">
+    import lazyImg from '../src/lazy-img.js';
+    const imgs = document.querySelectorAll('img[data-src]');
+    for (const img of imgs) {
+      lazyImg(img, img.dataset.src);
+    }
+  </script>
+
+  </body>
+</html>

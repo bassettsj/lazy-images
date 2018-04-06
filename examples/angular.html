@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Legacy Angular Example</h1>
+  <script src="../node_modules/angular/angular.js"></script>
+  <script type="module">
+    import lazyImgModule from '../src/ng-lazy-img.js';
+    angular.module('app', [
+      lazyImgModule.name,
+    ])
+    .controller('root', ['$scope', ($scope) => {
+      $scope.src = "https://placebear.com/200/200";
+
+      setTimeout(() => {
+        console.log('here');
+        $scope.src = 'https://placebear.com/500/800';
+        $scope.$apply();
+      }, 4000);
+    }]);
+  </script>
+  <div ng-app="app" style="margin-top: 1200px">
+    <div ng-controller="root">
+      <img lazy-img ng-attr-lazy-src="{{src}}" alt="bear"  />
+    </div>
+  </div>
+</body>
+</html>

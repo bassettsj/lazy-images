@@ -1,0 +1,30 @@
+{
+  "name": "lazy-directives",
+  "version": "1.0.0",
+  "main": "lib/",
+  "license": "MIT",
+  "optionalDependencies": {
+    "angular": "1.5"
+  },
+  "devDependencies": {
+    "angular": "1.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^22.4.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d lib",
+    "lint": "eslint ."
+  },
+  "eslintConfig": {
+    "extends": ["airbnb-base"],
+    "env": {
+      "jest": true,
+      "browser": true
+    }
+  }
+}
