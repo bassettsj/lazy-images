@@ -1,3 +1,23 @@
 {
-  "presets": ["env"]
+  "presets": [
+    ["env", {
+      "modules": false
+    }]
+  ],
+  "env": {
+    "commonjs": {
+      "presets": [
+        ["env"]
+      ]
+    },
+    "test": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "node": "current"
+          }
+        }]
+      ]
+    }
+  }
 }

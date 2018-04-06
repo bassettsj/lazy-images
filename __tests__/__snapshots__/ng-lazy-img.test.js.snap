@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lazy Images Angular directive should observe the lazy src attribute 1`] = `
+Object {
+  "0": <img
+    class="ng-scope"
+    lazy-img=""
+    lazy-src="https://example.com/logo.png"
+  />,
+  "length": 1,
+}
+`;
+
+exports[`Lazy Images Angular directive should throw an error when it called on another element 1`] = `"Must be used with an image element"`;

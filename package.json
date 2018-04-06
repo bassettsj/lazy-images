@@ -2,12 +2,14 @@
   "name": "lazy-directives",
   "version": "1.0.0",
   "main": "lib/",
+  "module": "es/",
   "license": "MIT",
   "optionalDependencies": {
     "angular": "1.5"
   },
   "devDependencies": {
     "angular": "1.5",
+    "angular-mocks": "1.5",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.9.0",
@@ -17,7 +19,9 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel src -d lib",
+    "build:cm": "BABEL_ENV=commonjs babel src -d lib",
+    "build:es": "babel src -d es",
+    "build": "yarn build:cm && yarn build:es",
     "lint": "eslint ."
   },
   "eslintConfig": {

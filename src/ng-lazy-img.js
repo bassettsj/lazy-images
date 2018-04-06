@@ -8,9 +8,7 @@ export default angular.module('lazy-img', [])
       const el = element[0];
       if (!(el instanceof HTMLImageElement)) throw new Error('Must be used with an image element');
       attrs.$observe('lazySrc', (newSrc) => {
-        requestAnimationFrame(() => {
-          lazyImg(el, newSrc);
-        });
+        lazyImg(el, newSrc);
       });
     },
   }));

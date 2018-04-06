@@ -70,6 +70,7 @@ describe('Lazy Image Vanilla Implementation', () => {
       expect(io.observe).toHaveBeenCalledWith(img);
       jest.advanceTimersByTime(500);
       expect(io.disconnect).not.toHaveBeenCalled();
+      expect(img.src).not.toBe(src);
     });
 
     it('should set the src when the observe returns the it is not intersecting', () => {

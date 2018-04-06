@@ -76,6 +76,10 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-mocks@1.5:
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.5.11.tgz#a0e1dd0ea55fd77ee7a757d75536c5e964c86f81"
+
 angular@1.5:
   version "1.5.11"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.5.11.tgz#8c5ba7386f15965c9acf3429f6881553aada30d6"
@@ -1326,10 +1330,6 @@ eslint-plugin-import@^2.7.0:
     lodash "^4.17.4"
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
-
-eslint-preset-airbnb-base@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-preset-airbnb-base/-/eslint-preset-airbnb-base-1.0.0.tgz#4e8e8c6f3672fc111ae0a1334c60ec6ee5f0f246"
 
 eslint-restricted-globals@^0.1.1:
   version "0.1.1"
